@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarMatch - Pencocokan Zodiak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="stars"></div>
+
+    <header>
+        <div class="logo">✨</div>
+        <div>
+            <h1>SEN.cos
+            <p>Pencocokan Zodiak</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <h2>💖 Seberapa Cocok Kalian?</h2>
+            <p>
+                Pilih dua zodiak dan temukan persentase kecocokannya!
+            </p>
+        </section>
+
+        <section class="match-card">
+
+            <div class="zodiac-input">
+                <div class="zodiac-preview" id="preview1">♈</div>
+
+                <label>Zodiak Pertama</label>
+
+                <select id="zodiac1">
+                    <option value="">-- Pilih Zodiak --</option>
+                    <option value="aries">♈ Aries</option>
+                    <option value="taurus">♉ Taurus</option>
+                    <option value="gemini">♊ Gemini</option>
+                    <option value="cancer">♋ Cancer</option>
+                    <option value="leo">♌ Leo</option>
+                    <option value="virgo">♍ Virgo</option>
+                    <option value="libra">♎ Libra</option>
+                    <option value="scorpio">♏ Scorpio</option>
+                    <option value="sagittarius">♐ Sagittarius</option>
+                    <option value="capricorn">♑ Capricorn</option>
+                    <option value="aquarius">♒ Aquarius</option>
+                    <option value="pisces">♓ Pisces</option>
+                </select>
+            </div>
+
+            <div class="heart">❤️</div>
+
+            <div class="zodiac-input">
+                <div class="zodiac-preview" id="preview2">♌</div>
+
+                <label>Zodiak Kedua</label>
+
+                <select id="zodiac2">
+                    <option value="">-- Pilih Zodiak --</option>
+                    <option value="aries">♈ Aries</option>
+                    <option value="taurus">♉ Taurus</option>
+                    <option value="gemini">♊ Gemini</option>
+                    <option value="cancer">♋ Cancer</option>
+                    <option value="leo">♌ Leo</option>
+                    <option value="virgo">♍ Virgo</option>
+                    <option value="libra">♎ Libra</option>
+                    <option value="scorpio">♏ Scorpio</option>
+                    <option value="sagittarius">♐ Sagittarius</option>
+                    <option value="capricorn">♑ Capricorn</option>
+                    <option value="aquarius">♒ Aquarius</option>
+                    <option value="pisces">♓ Pisces</option>
+                </select>
+            </div>
+
+        </section>
+
+        <button id="matchButton" class="match-button">
+            💘 Cek Kecocokan
+        </button>
+
+        <section id="result" class="result hidden">
+
+            <div class="result-title">
+                <span>✨ HASIL PENCocokan ✨</span>
+            </div>
+
+            <div class="couple">
+                <div class="result-zodiac">
+                    <div id="resultIcon1">♈</div>
+                    <strong id="resultName1">Aries</strong>
+                </div>
+
+                <div class="heart-big">💗</div>
+
+                <div class="result-zodiac">
+                    <div id="resultIcon2">♌</div>
+                    <strong id="resultName2">Leo</strong>
+                </div>
+            </div>
+
+            <div class="percentage-box">
+
+                <div class="percentage-circle" id="percentageCircle">
+
+                    <div class="percentage-logo" id="percentageLogo">
+                        💖
+                    </div>
+
+                    <div class="percentage">
+                        <span id="percentage">0</span>%
+                    </div>
+
+                    <small>Kecocokan</small>
+
+                </div>
+
+            </div>
+
+            <div class="progress-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+
+            <h3 id="resultTitle">Kecocokan Tinggi 💕</h3>
+
+            <p id="resultDescription">
+                Kalian memiliki energi yang cukup selaras.
+            </p>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <span>💖</span>
+                    <strong id="loveStat">0%</strong>
+                    <small>Love</small>
+                </div>
+
+                <div class="stat">
+                    <span>🤝</span>
+                    <strong id="friendStat">0%</strong>
+                    <small>Friendship</small>
+                </div>
+
+                <div class="stat">
+                    <span>⚡</span>
+                    <strong id="energyStat">0%</strong>
+                    <small>Energy</small>
+                </div>
+
+            </div>
+
+            <button id="resetButton" class="reset-button">
+                🔄 Coba Lagi
+            </button>
+
+        </section>
+
+        <section class="zodiac-info">
+
+            <h2>🌟 12 Zodiak</h2>
+
+            <div class="zodiac-grid">
+
+                <div>♈<span>Aries</span></div>
+                <div>♉<span>Taurus</span></div>
+                <div>♊<span>Gemini</span></div>
+                <div>♋<span>Cancer</span></div>
+                <div>♌<span>Leo</span></div>
+                <div>♍<span>Virgo</span></div>
+                <div>♎<span>Libra</span></div>
+                <div>♏<span>Scorpio</span></div>
+                <div>♐<span>Sagittarius</span></div>
+                <div>♑<span>Capricorn</span></div>
+                <div>♒<span>Aquarius</span></div>
+                <div>♓<span>Pisces</span></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>✨ StarMatch • Zodiak Compatibility ✨</p>
+        <p>Untuk hiburan saja</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
